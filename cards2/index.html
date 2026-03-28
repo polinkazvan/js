@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cards Game</title>
+<link rel="stylesheet" href = "style.css">
+
+</head>
+<body>
+
+<div id="setup">
+  <h1>Number of players:</h1>
+  <input type="number" id="playerCount" min="1" value="1">
+  <button onclick="startGame()" >Start Game</button>
+</div>
+
+<div class="turn" id="turn"></div>
+<div class="choice" id="choice"></div>
+
+<div id="game"></div>
+
+<div class="rules" id="rulse">
+<h3>Game Rules</h3>
+<p>
+Players take turns rolling two dice. Each player has a set of 12 cards numbered from 1 to 12. 
+Player can remove either the cards matching the numbers rolled on the dice,
+or the card equal to their sum.
+The player who removes all their cards first wins the game!
+</p>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
