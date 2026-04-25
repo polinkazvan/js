@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Create Card</h2>
+      <input id="frontInput" placeholder="Front side" />
+      <input id="backInput" placeholder="Back side" />
+      <button id="addBtn">Add Card</button>
+    </section>
+
+    <hr />
+
+    <section class="all-cards-section">
+      <details>
+        <summary>
+          <h2>All Cards</h2>
+          <span class="toggle-hint">click to expand</span>
+        </summary>
+        <div id="tableBody" class="card-list"></div>
+      </details>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Study</h2>
+      <label>
+        <input type="checkbox" id="studyUnlearned" />
+        Unlearned only
+      </label>
+      <button id="shuffleBtn">Shuffle</button>
+
+      <div id="card" class="card">No cards</div>
+
+      <div class="controls">
+        <button id="prevBtn">Back</button>
+        <button id="flipBtn">Flip</button>
+        <button id="nextBtn">Next</button>
+      </div>
+
+      <div id="position"></div>
+    </section>
+
+    <script src="state.js"></script>
+    <script src="render.js"></script>
+    <script src="logic.js"></script>
+  </body>
+</html>
