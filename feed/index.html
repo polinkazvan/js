@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Лента постов</title>
+  </head>
+  <body>
+    <div id="appContainer">
+      <div class="search-section">
+        <input id="searchInput" type="text" placeholder="Поиск постов..." />
+        <button id="loadMoreBtn">Загрузить еще</button>
+      </div>
+
+      <div id="statusMessage"></div>
+      <div id="contentArea"></div>
+
+      <div id="loadingIndicator" style="display: none">Загрузка данных...</div>
+
+      <div id="scrollTrigger"></div>
+    </div>
+    <script src="fetch.js"></script>
+    <script src="main.js"></script>
+    <script src="render.js"></script>
+  </body>
+</html>

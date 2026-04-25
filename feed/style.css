@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+}
+
+#appContainer {
+  max-width: 600px;
+  margin: 0 auto; /* Центрируем контент */
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px; /* Отступ снизу от поиска */
+}
+
+#searchInput {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #a0c4ff;
+  cursor: not-allowed;
+}
+
+.post-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 15px; /* Маргины между постами */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+#statusMessage,
+#loadingIndicator {
+  text-align: center;
+  margin: 15px 0;
+  color: #555;
+  font-weight: bold;
+}
